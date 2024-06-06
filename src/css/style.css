@@ -1,0 +1,240 @@
+:root {
+	--Black: #000000;
+	--Neutral: #404040;
+	--White: #ffffff;
+	--Error: #ef4444;
+	--zinc100: #f4f4f5;
+	--zinc200: #e4e4e7;
+	--zinc300: #d4d4d8;
+	--zinc500: #71717a;
+	--zinc800: #27272a;
+	--standart-weight: 91.68%;
+}
+
+main {
+	display: flex;
+	align-items: center;
+}
+
+.about {
+	width: 91.68%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.about .about__descriptions {
+	position: relative;
+	z-index: 1;
+	font-size: 16px;
+	font-family: 'Sora', sans-serif;
+	line-height: 24px;
+	color: var(--zinc500);
+	left: 5vw;
+}
+.about .person {
+	right: 5vw;
+	position: relative;
+	z-index: 2;
+}
+
+.plitki {
+	display: flex;
+	margin-top: 60px;
+	gap: 32px;
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	row-gap: 40px;
+}
+.skills svg:hover {
+	filter: invert(1);
+}
+
+.sk {
+	font-size: 48px;
+	font-family: 'Sora', sans-serif;
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 56px;
+	letter-spacing: -0.02em;
+}
+
+.skill_title {
+	display: flex;
+	justify-content: center;
+	margin: 60px;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+}
+header .panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Sora', sans-serif;
+	font-size: 24px;
+	width: 91.68%;
+	height: 104px;
+}
+header .panel .panel__logo {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+header .panel .panel__navigate {
+	display: flex;
+	gap: 32px;
+}
+header .panel .panel__navigate a {
+	color: var(--Black);
+}
+header .panel .panel__navigate a:hover {
+	color: var(--Neutral);
+	text-decoration: underline;
+	-webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+}
+header .panel .panel__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 56px;
+	width: 153px;
+	font-size: 24px;
+	color: var(--White);
+	background-color: var(--Black);
+	gap: 5px;
+	border-radius: 4px;
+}
+header .panel .panel__button:hover {
+	filter: invert(0.3);
+}
+header .panel .panel__button:active {
+	filter: invert(1);
+}
+
+.reviews {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 450px;
+	gap: 2%;
+	margin-bottom: 60px;
+}
+.reviews .review {
+	display: flex;
+	background-color: var(--White);
+	box-shadow: rgba(0, 0, 0, 0.5215686275) 0px 3px 3px;
+	flex-direction: column;
+	align-items: center;
+	gap: 10%;
+	padding: 50px;
+	width: 22%;
+	border-radius: 20px;
+}
+.reviews .review p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Sora', sans-serif;
+	font-size: 18px;
+	color: var(--Neutral);
+}
+.reviews .black {
+	background-color: #000000;
+}
+.reviews .black p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Sora', sans-serif;
+	font-size: 18px;
+	color: var(--White);
+}
+
+.testimonial {
+	text-align: center;
+	margin: 60px;
+}
+
+footer {
+	margin-top: 200px;
+	display: flex;
+}
+footer .forms {
+	width: 50%;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	align-items: center;
+}
+footer .forms form {
+	display: contents;
+	align-items: center;
+	justify-content: center;
+}
+footer .forms input {
+	padding: 5px;
+	border-radius: 8px;
+	border: #000000 solid 2px;
+	width: 70%;
+}
+footer .forms textarea {
+	padding: 5px;
+	border-radius: 8px;
+	border: #000000 solid 2px;
+	width: 70%;
+}
+footer .plitki {
+	width: 70%;
+}
+footer p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Sora', sans-serif;
+	font-size: 18px;
+	color: var(--Neutral);
+	width: 70%;
+}
+
+.line {
+	min-height: 2px;
+	width: 100%;
+	background-color: #000000;
+}
+
+.fot {
+	display: flex;
+	justify-content: center;
+	background-color: #000;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	body {
+		width: 100%;
+	}
+}
+
+@media (min-width: 120px) and (max-width: 360.98px) {
+	body {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 2400px) {
+	body {
+		width: 100%;
+	}
+}
